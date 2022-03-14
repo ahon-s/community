@@ -15,6 +15,23 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
     public User findByToken(String token) {
         return userMapper.findByToken(token);
     }
+
+    @Override
+    public void createOrUpdate(User user) {
+       User dbUser =  userMapper.findByAccountId(user.getAccountId());
+       if (dbUser == null){
+           user.setGmtCreate(System.currentTimeMillis());
+           user.setGmtModified(user.getGmtCreate());
+           this.save(user);
+       }else {
+            dbUser.setGmtModified(System.currentTimeMillis());
+            dbUser.setName(user.name);
+            dbUser.setAvatarUrl(user.avatarUrl);
+            dbUser.setToken(user.token);
+            this.updateById(dbUser);
+       }
+
+    }
 //    @Autowired
 //    UserMapper userMapper;
 //

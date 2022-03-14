@@ -1,0 +1,117 @@
+body{
+    background-color:#efefef;
+}
+
+.main{
+    background-color: white;
+    margin: 30px;
+}
+
+.btn-publish{
+    float: right;
+    margin-bottom: 15px;
+}
+
+.media-object {
+    width: 40px;
+}
+.media-body{
+    padding-top: 10px;
+}
+.text-desc{
+    font-size: 12px;
+    font-weight: normal ;
+    color: #999;
+}
+.profile .section{
+    margin-top: 15px;
+}
+.community-menu{
+    color: #999;
+    font-size: 12px;
+}
+.jumbotron{
+    margin: 50px;
+}
+.comment{
+    margin: 10px 0px;
+}
+.btn-comment{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.menu{
+    color: #999;
+    margin-top: 5px;
+}
+.menu .icon{
+    margin-right: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*评论按钮颜色*/
+.menu .active{
+    color: #499ef3;
+}
+.menu .icon:hover{
+    color: #499ef3;
+}
+/*评论*/
+.comments{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+/*问题标题*/
+.question-title
+{
+    margin-top: 30px;
+}
+/*子评论边框*/
+.sub-comments{
+    border-radius: 7px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+/*子评论按钮*/
+.sub-comments .btn{
+    margin: 10px 0;
+}
+.question-tag{
+    margin-left: 10px;
+}
+/*标签*/
+.community-tag:hover {
+    background-color: #339dff;
+    color: #fff !important;
+    text-decoration-line: none;
+}
+
+.community-tag {
+    text-decoration-line: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    line-height: 16px;
+    padding: 2px 5px;
+    background-color: #99cfff;
+    font-size: 12px;
+    color: #fff !important;
+    border-radius: 4px;
+    margin: 4px;
+}
+/*标签*/
+.publish-tag-tab {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.publish-tag-tab .label-info {
+    white-space: normal;
+    margin: 5px 5px;
+    display: inline-block;
+}

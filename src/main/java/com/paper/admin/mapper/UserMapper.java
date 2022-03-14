@@ -23,5 +23,6 @@ public interface UserMapper  extends BaseMapper<User>  {
     @Select("select * from user where token=#{token}")
     public User findByToken(@Param("token") String token);
 
-
+    @Select("select * from user where account_id=#{accountId}")
+    User findByAccountId(@Param("accountId") String accountId);
 }
